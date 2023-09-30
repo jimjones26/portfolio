@@ -8,7 +8,6 @@
 	];
 </script>
 
-\
 <footer>
 	<nav class="flex flex-col p-10">
 		{#each mainNavItems as navItem}
