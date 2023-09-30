@@ -9,5 +9,5 @@
 	<section class="flex-1">
 		<slot />
 	</section>
-	<footer><MainNav /></footer>
+	<MainNav />
 </div>

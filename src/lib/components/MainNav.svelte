@@ -8,8 +8,11 @@
 	];
 </script>
 
-<nav class="flex flex-col p-10">
-	{#each mainNavItems as navItem}
-		<MainNavItem {...navItem} />
-	{/each}
-</nav>
+\
+<footer>
+	<nav class="flex flex-col p-10">
+		{#each mainNavItems as navItem}
+			<MainNavItem {...navItem} />
+		{/each}
+	</nav>
+</footer>
