@@ -1,4 +1,5 @@
 <script>
+	import MainNav from '$lib/components/MainNav.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import '../app.postcss';
 </script>
@@ -10,5 +11,5 @@
 	<section class="flex-1">
 		<slot />
 	</section>
-	<footer>footer</footer>
+	<footer><MainNav /></footer>
 </div>
