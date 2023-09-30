@@ -3,6 +3,12 @@
 	import '../app.postcss';
 </script>
 
-<Navbar />
-
-<slot />
+<div class="flex flex-col h-screen">
+	<header>
+		<Navbar />
+	</header>
+	<section class="flex-1">
+		<slot />
+	</section>
+	<footer>footer</footer>
+</div>
