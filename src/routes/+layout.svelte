@@ -1,13 +1,11 @@
 <script>
 	import MainNav from '$lib/components/MainNav.svelte';
-	import Navbar from '$lib/components/Navbar.svelte';
+	import Header from '$lib/components/Header.svelte';
 	import '../app.postcss';
 </script>
 
 <div class="flex flex-col h-screen">
-	<header>
-		<Navbar />
-	</header>
+	<Header />
 	<section class="flex-1">
 		<slot />
 	</section>
