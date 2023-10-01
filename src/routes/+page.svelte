@@ -2,6 +2,9 @@
 	import MainNav from '$lib/components/MainNav.svelte';
 </script>
 
+<header class="p-10">
+	<span class="font-sans text-xl text-orange-700">Jimmy Jones</span>
+</header>
 <section class="flex flex-col flex-1 mx-10 mb-10">
 	<div class="flex-1">
 		<h1 class="text-2xl font-medium">Senior UX Integrator</h1>
