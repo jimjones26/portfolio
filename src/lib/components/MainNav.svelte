@@ -9,7 +9,7 @@
 </script>
 
 <footer>
-	<nav class="flex flex-col p-10">
+	<nav class="flex flex-col">
 		{#each mainNavItems as navItem}
 			<MainNavItem {...navItem} />
 		{/each}
