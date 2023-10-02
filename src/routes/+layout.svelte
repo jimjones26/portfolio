@@ -5,10 +5,10 @@
 	export let data;
 </script>
 
-<main class="h-screen">
+<main class="flex h-screen overflow-hidden">
 	{#key data.url}
 		<div
-			class="flex flex-col h-screen"
+			class="flex-1 flex flex-col"
 			in:fly={{ x: -200, duration: 300, delay: 300 }}
 			out:fly={{ x: 200, duration: 300 }}
 		>
