@@ -24,14 +24,12 @@
 		<ul class="mt-6 flex-1 overflow-scroll">
 			{#each data.experiences as item}
 				<li class="mb-6 last:mb-0">
-					<a href="/experience"
-						><div class="flex flex-col">
-							<h4 class="text-lg font-medium">{item.title}</h4>
-							<h5>{item.companyName}</h5>
-							<p class="text-sm">{item.date}</p>
-							<p class="mt-4">{item.shortDesc}</p>
-						</div></a
-					>
+					<div class="flex flex-col">
+						<h4 class="text-lg font-bold leading-5">{item.title}</h4>
+						<h5>{item.companyName}</h5>
+						<p class="text-sm font-light">{item.date}</p>
+						<!-- <p class="mt-4">{item.shortDesc}</p> -->
+					</div>
 				</li>
 			{/each}
 		</ul>
