@@ -8,7 +8,7 @@
 <main class="flex h-screen w-screen overflow-hidden">
 	{#key data.url}
 		<div
-			class="flex flex-col"
+			class="flex flex-col min-w-fit"
 			in:fly={{ x: -200, duration: 300, delay: 300 }}
 			out:fly={{ x: 200, duration: 300 }}
 		>
