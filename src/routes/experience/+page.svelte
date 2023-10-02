@@ -22,53 +22,18 @@
 	<div class="flex flex-col flex-1 overflow-hidden">
 		<h1 class="text-2xl font-medium text-orange-700">Experience</h1>
 		<ul class="mt-6 flex-1 overflow-scroll">
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
-			<li>Hello</li>
+			{#each data.experiences as item}
+				<li class="mb-6 last:mb-0">
+					<a href="/experience"
+						><div class="flex flex-col">
+							<h4 class="text-lg font-medium">{item.title}</h4>
+							<h5>{item.companyName}</h5>
+							<p class="text-sm">{item.date}</p>
+							<p class="mt-4">{item.shortDesc}</p>
+						</div></a
+					>
+				</li>
+			{/each}
 		</ul>
-		<!-- <p class="mt-6">
-			I would love to talk about helping you with your UX integration needs, or to discuss a full
-			stack development role.
-		</p> -->
 	</div>
 </section>
-<!-- {JSON.stringify(data.experiences[0])} -->
