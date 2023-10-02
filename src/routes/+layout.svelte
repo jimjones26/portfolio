@@ -5,10 +5,10 @@
 	export let data;
 </script>
 
-<main class="h-screen">
+<main class="flex h-screen w-screen overflow-hidden">
 	{#key data.url}
 		<div
-			class="flex flex-col h-screen"
+			class="flex flex-col min-w-fit w-full"
 			in:fly={{ x: -200, duration: 300, delay: 300 }}
 			out:fly={{ x: 200, duration: 300 }}
 		>
