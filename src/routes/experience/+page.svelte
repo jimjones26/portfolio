@@ -2,7 +2,7 @@
 	import type { PageData } from './$types';
 	import { goto } from '$app/navigation';
 	import { Button } from '$lib/components/ui/button';
-	import { ChevronLeft } from 'lucide-svelte';
+	import { ChevronLeft, Download } from 'lucide-svelte';
 
 	export let data: PageData;
 
@@ -16,6 +16,7 @@
 		<Button variant="ghost" class="mb-[1px]" on:click={handleBack}
 			><ChevronLeft /><span class="font-sans text-base ml-4">Return Home</span></Button
 		>
+		<Button class="ml-auto mr-6"><Download class="h-4 ml-[-4px] mr-1" />CV</Button>
 	</nav>
 </header>
 <section class="flex flex-col flex-1 mx-10 mb-10 mt-[-4px] overflow-hidden">
