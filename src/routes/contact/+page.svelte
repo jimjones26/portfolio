@@ -3,6 +3,10 @@
 	import { Button } from '$lib/components/ui/button';
 	import { ChevronLeft } from 'lucide-svelte';
 
+	import type { PageData } from './$types';
+	import ContactForm from './contact-form.svelte';
+	export let data: PageData;
+
 	function handleBack() {
 		goto('/');
 	}
@@ -22,6 +26,6 @@
 			I would love to talk about helping you with your UX integration needs, or to discuss a full
 			stack development role.
 		</p>
-		<form action="" />
+		<ContactForm form={data.form} />
 	</div>
 </section>
