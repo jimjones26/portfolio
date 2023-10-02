@@ -23,7 +23,7 @@
 	};
 </script>
 
-<Form.Root method="POST" {form} schema={formSchema} let:config {options}>
+<Form.Root method="POST" {form} schema={formSchema} let:config {options} class="mt-6">
 	<Form.Field {config} name="email">
 		<Form.Item>
 			<Form.Label>Email</Form.Label>
